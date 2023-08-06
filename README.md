@@ -37,7 +37,7 @@ Estoy emocionado de colaborar contigo en proyectos emocionantes y desafiantes. S
 
 Correo electrónico: arteduro@gmail.com
 
-LinkedIn: linkedin.com/in/tuperfil
+LinkedIn: https://www.linkedin.com/in/edgar-arteaga-durán-72a424117/
 
 Sitio Web: https://arteduro.github.io/Edgar-Arteaga/
 
