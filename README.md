@@ -36,7 +36,9 @@ Contacto
 Estoy emocionado de colaborar contigo en proyectos emocionantes y desafiantes. Si estás interesado en alguno de mis servicios o proyectos, no dudes en contactarme:
 
 Correo electrónico: arteduro@gmail.com
+
 LinkedIn: linkedin.com/in/tuperfil
+
 Sitio Web: www.tusitio.com
 
 ¡Espero tener la oportunidad de trabajar juntos para crear soluciones tecnológicas innovadoras y efectivas!
