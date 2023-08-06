@@ -39,6 +39,6 @@ Correo electrónico: arteduro@gmail.com
 
 LinkedIn: linkedin.com/in/tuperfil
 
-Sitio Web: www.tusitio.com
+Sitio Web: https://arteduro.github.io/Edgar-Arteaga/
 
 ¡Espero tener la oportunidad de trabajar juntos para crear soluciones tecnológicas innovadoras y efectivas!
