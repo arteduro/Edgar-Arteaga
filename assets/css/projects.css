@@ -178,4 +178,13 @@
   .projects__text__buttons{
     flex-direction: column;
   }
+  .experiencia {
+    text-align: center;
+  }
+  
+  .uniandes-logo {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    max-width: 1000px; /* Establece un ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
   }
