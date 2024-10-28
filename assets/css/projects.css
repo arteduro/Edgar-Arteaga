@@ -178,4 +178,18 @@
   .projects__text__buttons{
     flex-direction: column;
   }
+  /* Suponiendo que tienes un archivo CSS llamado styles.css */
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 }
