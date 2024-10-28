@@ -178,15 +178,4 @@
   .projects__text__buttons{
     flex-direction: column;
   }
-  /* Suponiendo que tienes un archivo CSS llamado styles.css */
-
-.image-container {
-  width: 100%; /* Hace que el contenedor ocupe el 100% del ancho */
-}
-
-.image-container img {
-  width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Rellena todo el contenedor manteniendo la proporción */
-}
- }
+  }
