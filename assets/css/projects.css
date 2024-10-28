@@ -30,7 +30,15 @@
   background: url(../images/Projects/Encriptador-gif.gif) no-repeat center/
     cover;
 }
+.panel {
+  background: url(../images/Projects/NuevaImagen.jpeg) no-repeat center/ cover;
+  transition: all 0.2s ease-in-out;
+}
 
+.panel:hover {
+  background: url(../images/Projects/Encriptador-gif.gif) no-repeat center/
+    cover;
+}
 .projects__text__encriptador {
   margin-left: 5px;
   padding: 40px;
