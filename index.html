@@ -1,536 +1,632 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edgar Arteaga - Portafolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/bases.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/introduction.css" />
-    <link rel="stylesheet" href="./assets/css/introduction-background.css" />
-    <link rel="stylesheet" href="./assets/css/presentation.css" />
-    <link rel="stylesheet" href="./assets/css/aboutme.css" />
-    <link rel="stylesheet" href="./assets/css/skills.css" />
-    <link rel="stylesheet" href="./assets/css/hobbies.css">
-    <link rel="stylesheet" href="./assets/css/academic.css">
-    <link rel="stylesheet" href="./assets/css/projects.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-  </head>
-  <body>
-    <header class="header">
-      <a href="">
-        <img
-          src="./assets/images/Logo-head.svg"
-          alt="Logo de marca personal"
-          class="header__logo"
-        />
-      </a>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Político 2024</title>
+  <style>
+    /* Estilos base */
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #111827;
+    }
 
-      <nav class="navegation">
-        <ul class="navegation__menu" data-type-menu>
-          <li class="navegation__menu__options">
-            <a href="#skillsSection">Skills</a>
-          </li>
-          <li class="navegation__menu__options">
-            <a href="#formationSection">Formación</a>
-          </li>
-          <li class="navegation__menu__options">
-            <a href="#projectsSection">Proyectos</a>
-          </li>
-          <li class="navegation__menu__options navegation__menu__options">
-            <a href="#contactSection"
-              ><input
-                class="navegation__menu__options--greet button"
-                type="button"
-                value="Salúdame"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-      <!--<a class="introduction__scroll" href="#presentationSection"><img class="introduction__scroll__image" src="./Images/Arrow.svg"></a>-->
-      <div for="check" class="header__menu__responsive" data-type-check>
-      </div>
-    </header>
-    <main>
-      <section id="presentationSection" class="presentation">
-        <div class="presentation__text">
-          <p class="presentation__text__welcome">!Hey!, ¿Qué tal?</p>
-          <h1 class="presentation__text__statement">
-            Soy Edgar Arteaga, tu aliado en el mundo digital. Con pasión por el desarrollo web y la ciencia de datos, creo soluciones personalizadas que van más allá de tus expectativas.
-          </h1>
-          <p class="bases__text">
-            Ingeniero de sistemas, Desarrollador Web, Data Sciencie, Analista Junior en Ciberseguridad. Mi objetivo es crear experiencias digitales únicas y personalizadas. Descubre insights valiosos para tomar decisiones estratégicas.
-            Convierto datos en oro.
-          </p>
-          <ul class="presentation__text__social">
-            <li class="presentation__text__social__icon">
-              <a
-                href="https://www.linkedin.com/in/edgar-arteaga-durán-72a424117/"
-                target="_blankpl A2"
-              >
-                <svg fill="currentColor" class="linkedin" viewBox="0 0 16 16">
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H3.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="presentation__text__social__icon">
-              <a href="https://github.com/arteduro" target="_blank">
-                <svg fill="currentColor" class="github" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                  />
-                </svg>
-              </a>
-            </li>
+    /* Layout */
+    .min-h-screen {
+      min-height: 100vh;
+    }
 
-            <li class="presentation__text__social__icon">
-              <a href="./assets/documents/CV RESUMEN2.pdf" target="_blank">
-                <svg
-                  class="cv"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512.000000 512.000000"
-                >
-                  <g
-                    transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M769 4596 c-102 -27 -181 -95 -228 -196 l-26 -55 0 -1785 0 -1785 26
-                    -56 c37 -79 90 -133 167 -171 l67 -33 1785 0 1785 0 67 33 c77 38 130 92 167
-                    171 l26 56 0 1785 0 1785 -33 67 c-38 77 -92 130 -171 167 l-56 26 -1765 2
-                    c-1378 1 -1775 -1 -1811 -11z m3496 -2036 l0 -1705 -1705 0 -1705 0 -3 1695
-                    c-1 932 0 1701 3 1708 3 10 350 12 1707 10 l1703 -3 0 -1705z"
-                    />
-                    <path
-                      d="M1729 3731 c-88 -28 -154 -69 -218 -135 -63 -66 -99 -129 -125 -215
-                    -14 -47 -16 -118 -16 -482 0 -398 1 -431 20 -491 79 -256 356 -410 615 -343
-                    186 49 341 214 374 399 19 105 34 96 -157 96 l-167 0 -18 -49 c-40 -113 -160
-                    -154 -257 -88 -70 47 -70 47 -70 483 0 390 0 391 23 425 35 53 82 79 140 79
-                    86 0 154 -54 172 -137 l7 -33 169 0 169 0 0 28 c0 50 -30 155 -60 211 -64 119
-                    -160 202 -285 246 -88 31 -229 34 -316 6z"
-                    />
-                    <path
-                      d="M2562 3738 c3 -7 99 -390 214 -850 l209 -838 171 0 172 0 211 845
-                    c116 465 211 847 211 850 0 3 -78 5 -174 5 l-174 0 -111 -447 c-62 -247 -117
-                    -466 -123 -488 -10 -38 -16 -19 -133 445 l-121 485 -178 3 c-141 2 -177 0
-                    -174 -10z"
-                    />
-                    <path
-                      d="M1370 1540 l0 -170 1190 0 1190 0 0 170 0 170 -1190 0 -1190 0 0
-                    -170z"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <img class="presentation__photo" src="./assets/images/avatar2.png" alt="Foto de Edgar">
-      </section>
-      <section id="aboutmeSection" class="aboutme">
-        <h2 class="bases__title2">Sobre mi</h2>
-        <p class="bases__text--normal">
-          Soy un desarrollador web y científico de datos apasionado por crear experiencias digitales únicas y personalizadas. Con mi expertise en React, Python y SQL, desarrollo soluciones web y aplicaciones que generan resultados. ¿Quieres llevar tu proyecto al siguiente nivel? ¡Contáctame!
-          <br />
-        
-          <br />
-          Una de las frases que me define:
-        </p>
-        <p class="bases__text bases__text--active aboutme__text">
-          No es la especie más fuerte la que sobrevive. Tampoco la más inteligente. Sino aquella que mejor responde al cambio: Charles Darwin.</>
-        </p>
-      </section>
-      <section id="skillsSection" class="skills bases__text--normal">
-        <h2 class="bases__title2 skills__title">Skills</h2>
-        <div class="skills--hard ">
-          <div class="skills__container">
-            <h3 class="skills__container__title">Desarrollo Front-End y Back-End</h3>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>HTML5</span>
-                <span>80%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div
-                  id="html"
-                  class="skills__container__item__bar--style"
-                ></div>
-              </div>
-            </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>CSS</span>
-                <span>57%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div id="css" class="skills__container__item__bar--style"></div>
-              </div>
-            </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>JAVASCRIPT</span>
-                <span>71%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div id="lofi" class="skills__container__item__bar--style"></div>
-              </div>
-            </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>PYTHON</span>
-                <span>80%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div
-                  id="html"
-                  class="skills__container__item__bar--style"
-                ></div>
-              </div>
-            </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>MYSQL</span>
-                <span>80%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div
-                  id="html"
-                  class="skills__container__item__bar--style"
-                ></div>
-              </div>
-            </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>Github</span>
-                <span>62%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div id="github" class="skills__container__item__bar--style"></div>
-              </div>
-            </div>
-			     
-          </div>
+    .flex {
+      display: flex;
+    }
 
-          <div class="skills__container">
-            <h3 class="skills__container__title">Diseño UX</h3>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>Web Design</span>
-                <span>57%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div id="css" class="skills__container__item__bar--style"></div>
+    .items-center {
+      align-items: center;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .max-w-2xl {
+      max-width: 42rem;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Componentes */
+    .card {
+      background: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .button-default {
+      background-color: #3b82f6;
+      color: white;
+    }
+
+    .button-default:hover {
+      background-color: #2563eb;
+    }
+
+    .button-outline {
+      background-color: transparent;
+      color: #374151;
+      border-color: #d1d5db;
+    }
+
+    .button-outline:hover {
+      background-color: #f3f4f6;
+      border-color: #9ca3af;
+    }
+
+    /* Progress bar */
+    .progress {
+      width: 100%;
+      height: 0.5rem;
+      background-color: #e5e7eb;
+      border-radius: 0.25rem;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #3b82f6;
+      transition: width 0.5s ease;
+    }
+
+    /* Result bars */
+    .result-bar-container {
+      height: 1rem;
+      background-color: #e5e7eb;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    .result-bar {
+      height: 100%;
+      transition: width 0.5s ease;
+    }
+
+    /* Tipografía */
+    .font-title {
+      font-weight: 800;
+    }
+
+    .font-body {
+      font-weight: 400;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Espaciado */
+    .space-y-4 > * + * {
+      margin-top: 1rem;
+    }
+
+    .space-y-6 > * + * {
+      margin-top: 1.5rem;
+    }
+
+    .space-y-8 > * + * {
+      margin-top: 2rem;
+    }
+
+    .py-8 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .p-4 {
+      padding: 1rem;
+    }
+
+    .p-6 {
+      padding: 1.5rem;
+    }
+
+    .p-8 {
+      padding: 2rem;
+    }
+
+    /* Colores */
+    .bg-blue-500 {
+      background-color: #3b82f6;
+    }
+
+    .bg-green-500 {
+      background-color: #10b981;
+    }
+
+    .bg-gray-200 {
+      background-color: #e5e7eb;
+    }
+
+    .text-gray-600 {
+      color: #4b5563;
+    }
+
+    .text-gray-800 {
+      color: #1f2937;
+    }
+
+    .text-red-500 {
+      color: #ef4444;
+    }
+
+    .text-blue-500 {
+      color: #3b82f6;
+    }
+
+    /* Animaciones */
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Efectos */
+    .hover-scale-105:hover {
+      transform: scale(1.05);
+    }
+
+    .transition-all {
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    .duration-500 {
+      transition-duration: 500ms;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+    }
+
+    .gap-3 {
+      gap: 0.75rem;
+    }
+
+    /* Background gradient */
+    .gradient-bg {
+      background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+    }
+
+    /* Iconos */
+    .icon {
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Text sizes */
+    .text-sm {
+      font-size: 0.875rem;
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+    }
+
+    .text-3xl {
+      font-size: 1.875rem;
+    }
+
+    .text-4xl {
+      font-size: 2.25rem;
+    }
+
+    /* Utilities */
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .justify-start {
+      justify-content: flex-start;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .h-auto {
+      height: auto;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    // Datos de las preguntas
+    const questions = [
+      {
+        id: 1,
+        text: "El Estado debería tener un rol activo en la economía.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 2,
+        text: "La libertad económica es más importante que la igualdad social.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 3,
+        text: "La educación y la salud deberían ser servicios públicos gratuitos.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 4,
+        text: "El matrimonio entre personas del mismo sexo debería ser legal.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 5,
+        text: "La inmigración enriquece cultural y económicamente al país.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 6,
+        text: "El cambio climático debería ser una prioridad política.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 7,
+        text: "La legalización de las drogas reduciría problemas sociales.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 8,
+        text: "El aborto debería ser legal y accesible.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 9,
+        text: "La religión debería influir en las políticas públicas.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      },
+      {
+        id: 10,
+        text: "Las grandes empresas deberían pagar más impuestos.",
+        options: [
+          { text: "Totalmente de acuerdo", value: 2 },
+          { text: "De acuerdo", value: 1 },
+          { text: "En desacuerdo", value: -1 },
+          { text: "Totalmente en desacuerdo", value: -2 }
+        ]
+      }
+    ];
+
+    // Aplicación
+    document.addEventListener('DOMContentLoaded', () => {
+      const app = document.getElementById('app');
+      let state = {
+        answers: {},
+        isStarted: false,
+        showResults: false
+      };
+
+      function render() {
+        const progress = (Object.keys(state.answers).length / questions.length) * 100;
+
+        if (!state.isStarted) {
+          renderStartScreen();
+          return;
+        }
+
+        if (state.showResults) {
+          renderResults();
+          return;
+        }
+
+        renderQuestions(progress);
+      }
+
+      function renderStartScreen() {
+        app.innerHTML = `
+          <div class="min-h-screen flex items-center justify-center gradient-bg p-4">
+            <div class="card max-w-2xl w-full p-8 space-y-6 animate-fade-in">
+              <h1 class="text-4xl font-title text-center">Test Político 2024</h1>
+              <p class="text-center text-gray-600 font-body">
+                Descubre tu tendencia política respondiendo 10 preguntas sobre diferentes aspectos sociales, políticos y económicos.
+              </p>
+              <div class="flex justify-center">
+                <button id="startBtn" class="button button-default px-8 py-4 text-lg transition-all hover-scale-105">
+                  Comenzar Test
+                </button>
               </div>
             </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>Figma</span>
-                <span>55%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div id="dt" class="skills__container__item__bar--style"></div>
-              </div>
-            </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>Realización de esquemas (wireframe)</span>
-                <span>86%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div id="wireframe" class="skills__container__item__bar--style"></div>
-              </div>
-            </div>
-            <div class="skills__container__item">
-              <div class="skills__container__item__text">
-                <span>Prototipos de baja fidelidad (Lo-fi)</span>
-                <span>71%</span>
-              </div>
-              <div class="skills__container__item__bar">
-                <div id="lofi" class="skills__container__item__bar--style"></div>
-              </div>
-            </div>
           </div>
-        </div>
-        <div class="skills--soft">
-          <span class="skills--active">Capacidad de daptación</span>
-          <span class="skills--active">Resolución de problemas</span>
-          <span class="skills--active">Business Agility</span>
-          <span class="skills--active">Scrum</span>
-          <span class="skills--active">Implementación de hábitos</span>
-          <span class="skills--active">Trabajo en equipo</span>
-          <span class="skills--active">Capacidad de aprendizaje</span>
-          <span class="skills--active">Orientación a resultados</span>
-          <span class="skills--active">Pensamiento Crítico</span>
-          <span class="skills--active">Resilencia</span><span></span>
-        </div>
-      </section>
-      <section class="hobbies">
-        <h2 class="bases__title2 hobbies__title">Hobbies</h2>
-        <div class="slide-track bases__text--normal">
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/load2.svg" alt="">
-            <span>Leer</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/cine5.svg" alt="">
-            <span>Ir al Cine</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/musica4.svg" alt="">
-            <span>Escuchar Música</span>
-          </div>
-          <br>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/load2.svg" alt="">
-            <span>Leer</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/cine5.svg" alt="">
-            <span>Ir al Cine</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/musica4.svg" alt="">
-            <span>Escuchar Música</span>
-          </div>
-          <br>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/load2.svg" alt="">
-            <span>Leer</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/cine5.svg" alt="">
-            <span>Ir al Cine</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/musica4.svg" alt="">
-            <span>Escuchar Música</span>
-          </div>
-          <br>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/load2.svg" alt="">
-            <span>Leer</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/cine5.svg" alt="">
-            <span>Ir al ine</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/musica4.svg" alt="">
-            <span>Escuchar Música</span>
-          </div>
-          <br>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/load2.svg" alt="">
-            <span>Leer</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/cine5.svg" alt="">
-            <span>Ir al Cine</span>
-          </div>
-          <div class="slide">
-            <img class="icon" src="./assets/images/icons/musica4.svg" alt="">
-            <span>Escuchar Música</span>
-          </div>
-        </div>
-      </section>
-      <section id="formationSection" class="academic">
-        <h2 class="bases__title2 academic__title">Formación Académica</h2>
-        <div class="academic--container bases__text--normal">
-          <a href="./assets/documents/Formación - Alura.pdf" target="_blank">
-            <div class="academic__formation">
-              <img class="academic__formation__image" src="./assets/images/icons/alura3.jpg" alt="Icono de Alura">
-              <div class="academic__formation__text">
-                <h3 class="academic__formation__text--active">DESARROLLO FRONT-END</h3>
-                <p class="academic__formation__text--unactive">Oracle & Alura Latam</p>
-              </div>
-            </div>
-          </a>
-          <a href="./assets/documents/10.PYTHON, DATA SCIENCE EN OCI Y ORACLE ANALYTICS-ONE.pdf" target="_blank">
-            <div class="academic__formation">
-              <img class="academic__formation__image" src="./assets/images/icons/PYTHON.png" alt="Icono de Alura">
-              <div class="academic__formation__text">
-                <h3 class="academic__formation__text--active">DATA SCIENCIE CON PYTHON</h3>
-                <p class="academic__formation__text--unactive">Oracle & Alura Latam</p>
-              </div>
-            </div>
-          </a>
-          <a href="./assets/documents/SQL CON MYSQL SERVER DE ORACLE-ONE.pdf" target="_blank">
-              <div class="academic__formation">
-                <img class="academic__formation__image" src="./assets/images/icons/MySQL.jpg" alt="Icono de Google">
-                <div class="academic__formation__text">
-                  <h3 class="academic__formation__text--active">SQL CON MYSQL SERVER DE ORACLE</h3>
-                  <p class="academic__formation__text--unactive">Oracle & Alura Latam</p>
+        `;
+
+        document.getElementById('startBtn').addEventListener('click', () => {
+          state.isStarted = true;
+          render();
+        });
+      }
+
+      function renderQuestions(progress) {
+        let html = `
+          <div class="min-h-screen gradient-bg py-8 px-4">
+            <div class="max-w-2xl mx-auto space-y-8">
+              <div class="space-y-4">
+                <div class="progress">
+                  <div class="progress-bar" style="width: ${progress}%"></div>
                 </div>
-              </div>
-            </a>
-			</a>
-      <a href="./assets/documents/ORACLE CLOUD INFRASTRUCTURE.pdf" target="_blank">
-              <div class="academic__formation">
-                <img class="academic__formation__image" src="./assets/images/icons/CLOUD.jpg" alt="Icono de Google">
-                <div class="academic__formation__text">
-                  <h3 class="academic__formation__text--active">ORACLE CLOUD INFRASTUCTURE</h3> </h3>
-                  <p class="academic__formation__text--unactive">Oracle & Alura Latam</p>
-                </div>
-              </div>
-            </a>
-			</a>
-        <a href="./assets/documents/CLAUD COMPUTING.pdf" target="_blank">
-         <div class="academic__formation">
-          <img class="academic__formation__image" src="./assets/images/icons/eoi.webp" alt="Icono de Google">
-          <div class="academic__formation__text">
-            <h3 class="academic__formation__text--active">CLOUD COMPUTING</h3> </h3>
-            <p class="academic__formation__text--unactive">Gobierno de Eapaña-Escuela de Organización Indrustrial-Google</p>
-          </div>
-         </div>
-       </a>
-       <a href="https://www.credly.com/badges/88045cf3-e639-444f-af8b-a9a34b453bc5/public_url" target="_blank">
-        <div class="academic__formation">
-          <img class="academic__formation__image" src="./assets/images/icons/junior-cybersecurity-analyst-career-path.1.png" alt="Icono de Google">
-          <div class="academic__formation__text">
-            <h3 class="academic__formation__text--active">ANALISTA JUNIOR EN CIBERSEGURIDAD</h3>
-            <p class="academic__formation__text--unactive">CISCO Networking Academy</p>
-          </div>
-        </div>
-      </a>
-      <a href="https://www.credly.com/badges/308385d2-593e-4a59-9898-69a65c546049/public_url" target="_blank">
-        <div class="academic__formation">
-          <img class="academic__formation__image" src="./assets/images/icons/fortinet-certified-fundamentals-cybersecurity.png" alt="Icono de Google">
-          <div class="academic__formation__text">
-            <h3 class="academic__formation__text--active">FUNDAMENTOS CERTIFICADOS DE FORTINET EN CIBERSEGURIDAD</h3>
-            <p class="academic__formation__text--unactive">Instituto de Formación FORTINET</p>
-          </div>
-        </div>
-      </a>
-        <a href="https://www.coursera.org/account/accomplishments/verify/WK8UVH3Y29E8" target="_blank">
-         <div class="academic__formation">
-          <img class="academic__formation__image" src="./assets/images/icons/uniandes.png" alt="Icono de Google">
-          <div class="academic__formation__text">
-            <h3 class="academic__formation__text--active">INTRODUCCIÓN A LA INTELIGENCIA ARTIFICIAL CONTEMPORANEA</h3>
-            <p class="academic__formation__text--unactive">Universidad de los Andes</p>
-          </div>
-         </div>
-        </a>
-        <a href="https://www.coursera.org/account/accomplishments/verify/Y6V89SQKR29G" target="_blank">
-          <div class="academic__formation">
-            <img class="academic__formation__image" src="./assets/images/icons/unichile.png" alt="Icono de Google">
-            <div class="academic__formation__text">
-              <h3 class="academic__formation__text--active">INTRODUCCIÓN A LA PROGRAMACIÓN EN PYTHON</h3>
-              <p class="academic__formation__text--unactive">Pontificia Universidad Católica de Chile</p>
-            </div>
-          </div>
-        </a>
-        <a href="./assets/documents/Certificado - Curso profesional de Python.pdf" target="_blank">
-          <div class="academic__formation">
-            <img class="academic__formation__image" src="./assets/images/icons/python-thumb.jpg" alt="Icono de Alura">
-            <div class="academic__formation__text">
-              <h3 class="academic__formation__text--active">CURSO PROFESIONAL DE PYTHON</h3>
-              <p class="academic__formation__text--unactive">Código Facilito</p>
-            </div>
-          </div>
-        </a>
-        <a href="./assets/documents/Certificado - Curso profesional de JavaScript.pdf" target="_blank">
-          <div class="academic__formation">
-            <img class="academic__formation__image" src="./assets/images/icons/JAVASCRIPT.jpg" alt="Icono de Alura">
-            <div class="academic__formation__text">
-              <h3 class="academic__formation__text--active">CURSO PROFESIONAL DE JAVASCRIPT</h3>
-              <p class="academic__formation__text--unactive">Código Facilito</p>
-            </div>
-          </div>
-        </a>
-        <a href="./assets/documents/( UX ) DISEÑADOR DE EXPERIENCIA DE USUARIO.pdf" target="_blank">
-          <div class="academic__formation">
-            <img class="academic__formation__image" src="./assets/images/icons/Slim4.webp" alt="Icono de Alura">
-            <div class="academic__formation__text">
-              <h3 class="academic__formation__text--active">DISEÑO DE EXPERIENCIA DE USUARIO (UX)-(SEO)-(SEM)</h3>
-              <p class="academic__formation__text--unactive">Fundación Carlos Slim</p>
-            </div>
-          </div>
-        </a>
-        </div>
-    </section>
-        <section id="projectsSection" class="projects">
-          <h2 class="bases__title2 projects__title">Experiencia profesional</h2>
-          <div class="projects__container ">
-            <a  href="./assets/images/Projects/NuevaImagen.jpeg" target="_blank">
-              <div class="projects__image encriptador" ></div>
-            </a>
-            <div class="projects__text__encriptador bases__text--normal">
-                <p class="projects__text__type__encriptador bases__text--active">Analíca de Datos</p>
-                <h3 class="projects__text__title__encriptador">Dashboard de Ventas</h3>
-                <p class="projects__text__description">El dashboard de ventas es una herramienta invaluable para cualquier empresa que desee optimizar sus operaciones comerciales. Al proporcionar una visión clara y concisa de los datos de ventas, este tipo de herramienta permite a las empresas tomar decisiones más inteligentes y lograr un mayor crecimiento.
+                <p class="text-center text-sm text-gray-600 font-body">
+                  Pregunta ${Object.keys(state.answers).length} de ${questions.length}
                 </p>
-                <div class="projects__text__buttons">
-                  <a  href="./assets/images/Projects/Informe-de-Ventas.gif" target="_blank">
-                    <button class="projects__text__buttons__encriptador">Ver demo</button>
-                  </a>
-                  <a href="https://github.com/arteduro/Dashboard-de-Ventas/" target="_blank">
-                    <button class="projects__text__buttons__encriptador">Repositorio</button>
-                  </a>
-                </div>
-            </div>
-        </section>
-      <section id="contactSection" class="contact">
-      <img class="contact__logo" src="./assets/images/Logo.svg" alt="">
-      <form>
-        <fieldset class="contact__form">
-          <legend class="bases__title2">Contacto</legend>
-          <p class="contact__form__ask">¿Quieres contactarme?</p>
-          <p class="contact__form__text bases__text--normal">Mándame un mensaje y me pondre en contacto con usted lo antes posible</p>
-          <input class="contact__form__box" placeholder="Nombre(s)" type="text" name="" id="form__name">
-          <input class="contact__form__box contact__form__box--mail" placeholder="E-mail" type="email" name="" id="form__e-mail">
-          <input class="contact__form__box" placeholder="Asunto" type="text" name="" id="form__subject">
-          <textarea class="contact__form__area name=" placeholder="Mensaje..." id="form__msg"></textarea>
-          <button class="contact__form__button" id="form__submit" type="submit">Enviar</button>
-        </fieldset>
-      </form>
-  </section>
-    </main>
-    <footer class="footer__container">
-        <a href="">
-          <img class="footer__logo" src="./assets/images/Logo-head.svg" alt="">
-        </a>
-        <nav class="navegation__footer">
-          <ul class="navegation__footer__menu">
-            <li class="navegation__footer__menu__options"><a  href="#aboutmeSection">Sobre mi</a></li>
-            <li class="navegation__footer__menu__options"><a  href="#skillsSection">Skills</a></li>
-            <li class="navegation__footer__menu__options"><a  href="#formationSection">Formación</a></li>
-            <li class="navegation__footer__menu__options"><a  href="#projectsSection">Proyectos</a></li>
-          </ul>
-        </nav>
-        <div class="footer__lyrcs">
-          <p class="bases__text--active">Created by: Edgar Arteaga</p>
-          <ul class="footer__text__social">
-            <li class="footer__text__social__icon"><a href="https://github.com/arteduro" target="_blank">
-              <svg
-                      fill="currentColor"
-                      class="github"
-                      viewBox="0 0 16 16"
+              </div>
+              <div class="space-y-6">
+        `;
+
+        questions.forEach(question => {
+          html += `
+            <div class="card p-6 space-y-4 animate-fade-in">
+              <h2 class="text-xl font-title">${question.text}</h2>
+              <div class="grid gap-3">
+          `;
+
+          question.options.forEach(option => {
+            const isSelected = state.answers[question.id] === option.value;
+            html += `
+              <button 
+                class="button ${isSelected ? 'button-default' : 'button-outline'} w-full justify-start text-left h-auto p-4 transition-all hover:scale-[1.02] font-body"
+                data-question-id="${question.id}"
+                data-value="${option.value}"
               >
-                <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                />
-              </svg>
-            </li>
-            <li class="footer__text__social__icon">
-              <a href="https://www.linkedin.com/in/edgar-arteaga-durán-72a424117/" target="_blankpl A2" >
-                <svg
-                      fill="currentColor"
-                      class="linkedin"
-                      viewBox="0 0 16 16"
-                >
-                <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-    </footer>
-  </body>
-  <script src="./Script/navAction.js"></script>
+                ${option.text}
+              </button>
+            `;
+          });
+
+          html += `
+              </div>
+            </div>
+          `;
+        });
+
+        if (Object.keys(state.answers).length === questions.length) {
+          html += `
+            <button id="showResultsBtn" class="button button-default w-full py-4 text-lg font-body">
+              Ver Resultados
+            </button>
+          `;
+        }
+
+        html += `
+              </div>
+              <footer class="text-center text-gray-600 py-4 space-x-2 font-body">
+                <span>Desarrollado con</span>
+                <span class="icon text-red-500">❤</span>
+                <span>por Edgar Arteaga Durán</span>
+                <span class="icon text-blue-500">🚀</span>
+              </footer>
+            </div>
+          </div>
+        `;
+
+        app.innerHTML = html;
+
+        document.querySelectorAll('[data-question-id]').forEach(button => {
+          button.addEventListener('click', (e) => {
+            const questionId = parseInt(e.currentTarget.getAttribute('data-question-id'));
+            const value = parseInt(e.currentTarget.getAttribute('data-value'));
+            state.answers[questionId] = value;
+            render();
+          });
+        });
+
+        const resultsBtn = document.getElementById('showResultsBtn');
+        if (resultsBtn) {
+          resultsBtn.addEventListener('click', () => {
+            state.showResults = true;
+            render();
+          });
+        }
+      }
+
+      function calculateResults() {
+        let economicScore = 0;
+        let socialScore = 0;
+
+        // Economic questions (1, 2, 3, 10)
+        economicScore += (state.answers[1] || 0) * -1; // Invertido para alineación derecha
+        economicScore += (state.answers[2] || 0);
+        economicScore += (state.answers[3] || 0) * -1;
+        economicScore += (state.answers[10] || 0) * -1;
+
+        // Social questions (4-9)
+        socialScore += (state.answers[4] || 0);
+        socialScore += (state.answers[5] || 0);
+        socialScore += (state.answers[6] || 0);
+        socialScore += (state.answers[7] || 0);
+        socialScore += (state.answers[8] || 0);
+        socialScore += (state.answers[9] || 0) * -1; // Invertido
+
+        // Normalizar a escala -10 a 10
+        economicScore = (economicScore / 8) * 10;
+        socialScore = (socialScore / 12) * 10;
+
+        return { economicScore, socialScore };
+      }
+
+      function getIdeology(economicScore, socialScore) {
+        if (economicScore >= 0) {
+          return socialScore >= 0 ? "Liberal Progresista" : "Liberal Conservador";
+        } else {
+          return socialScore >= 0 ? "Socialdemócrata" : "Socialista Conservador";
+        }
+      }
+
+      function renderResults() {
+        const { economicScore, socialScore } = calculateResults();
+        const ideology = getIdeology(economicScore, socialScore);
+
+        app.innerHTML = `
+          <div class="min-h-screen gradient-bg py-8 px-4">
+            <div class="max-w-2xl mx-auto">
+              <div class="card p-8 space-y-6 animate-fade-in">
+                <h2 class="text-3xl font-title text-center">Tus Resultados</h2>
+                
+                <div class="space-y-8">
+                  <div class="space-y-4">
+                    <h3 class="text-xl font-title">Tu Ideología: ${ideology}</h3>
+                    <p class="text-gray-600 font-body">
+                      Basado en tus respuestas, tus tendencias políticas se alinean con una perspectiva ${ideology.toLowerCase()}.
+                    </p>
+                  </div>
+
+                  <div class="space-y-4">
+                    <div class="space-y-2">
+                      <p class="font-body text-sm text-gray-600">Eje Económico: ${economicScore.toFixed(1)}</p>
+                      <div class="result-bar-container">
+                        <div 
+                          class="result-bar bg-blue-500 duration-500"
+                          style="width: ${((economicScore + 10) / 20) * 100}%"
+                        ></div>
+                      </div>
+                      <div class="flex justify-between text-sm text-gray-500 font-body">
+                        <span>Izquierda</span>
+                        <span>Derecha</span>
+                      </div>
+                    </div>
+
+                    <div class="space-y-2">
+                      <p class="font-body text-sm text-gray-600">Eje Social: ${socialScore.toFixed(1)}</p>
+                      <div class="result-bar-container">
+                        <div 
+                          class="result-bar bg-green-500 duration-500"
+                          style="width: ${((socialScore + 10) / 20) * 100}%"
+                        ></div>
+                      </div>
+                      <div class="flex justify-between text-sm text-gray-500 font-body">
+                        <span>Conservador</span>
+                        <span>Progresista</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button id="restartBtn" class="button button-default w-full font-body">
+                    Realizar el Test Nuevamente
+                  </button>
+                </div>
+              </div>
+
+              <footer class="text-center text-gray-600 py-4 space-x-2 font-body">
+                <span>Desarrollado con</span>
+                <span class="icon text-red-500">❤</span>
+                <span>por Edgar Arteaga Durán</span>
+                <span class="icon text-blue-500">🚀</span>
+              </footer>
+            </div>
+          </div>
+        `;
+
+        document.getElementById('restartBtn').addEventListener('click', () => {
+          state = {
+            answers: {},
+            isStarted: false,
+            showResults: false
+          };
+          render();
+        });
+      }
+
+      // Render inicial
+      render();
+    });
+  </script>
+</body>
 </html>
