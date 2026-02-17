@@ -171,26 +171,53 @@
   100% { width: 80%; }
 }
 
-/* Mantenemos los estilos anteriores por si acaso (pero ya no se usan) */
+/* Ocultamos IDs antiguos que ya no se usan */
 #js, #git, #figma, #dt, #wireframe, #lofi {
-  display: none; /* Ocultamos los IDs antiguos que ya no se usan */
+  display: none;
 }
 
+/* ===== SOFT SKILLS - 8 HABILIDADES (GRID PERFECTO) ===== */
 .skills--soft {
   color: white;
   background: #00000061;
   border: 2px solid white;
-  padding: 30px;
-  gap: 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas = 2 filas perfectas */
+  gap: 15px;
+  margin-top: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .skills--active {
   font-weight: bold;
+  padding: 15px 10px;
+  text-align: center;
+  background: rgba(42, 122, 228, 0.2);
+  border-radius: 8px;
+  border-left: 4px solid #2A7AE4;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  word-break: break-word;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.skills--active:hover {
+  background: rgba(42, 122, 228, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-left-color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 1280px) {
   .skills {
     padding: 52px 90px;
@@ -200,6 +227,18 @@
 @media screen and (max-width: 1024px) {
   .skills {
     padding: 32px;
+  }
+  
+  .skills--soft {
+    grid-template-columns: repeat(4, 1fr); /* Se mantiene 4 columnas */
+    gap: 12px;
+    padding: 20px;
+  }
+  
+  .skills--active {
+    padding: 12px 8px;
+    min-height: 65px;
+    font-size: 0.95rem;
   }
 }
 
@@ -220,7 +259,30 @@
   }
 
   .skills--soft {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas = 4 filas */
+    gap: 10px;
     padding: 15px;
-    justify-content: center;
+  }
+  
+  .skills--active {
+    padding: 10px 6px;
+    min-height: 60px;
+    font-size: 0.9rem;
+    border-left-width: 3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills--soft {
+    grid-template-columns: repeat(2, 1fr); /* Se mantiene 2 columnas */
+    gap: 8px;
+    padding: 12px;
+  }
+  
+  .skills--active {
+    padding: 8px 4px;
+    min-height: 50px;
+    font-size: 0.85rem;
+    border-left-width: 2px;
   }
 }
