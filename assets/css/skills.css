@@ -285,4 +285,11 @@
     font-size: 0.85rem;
     border-left-width: 2px;
   }
+
+  /* RESPALDO - FUERZA GRID DE 4 COLUMNAS */
+.skills--soft {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 15px !important;
+}
 }
