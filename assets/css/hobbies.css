@@ -1,4 +1,4 @@
-/* ===== HOBBIES - VERSIÓN OPTIMIZADA PARA MÓVIL ===== */
+/* ===== HOBBIES - VERSIÓN COMPLETA Y OPTIMIZADA ===== */
 .hobbies {
   padding: 64px 120px;
   background-color: #0b0c10;
@@ -11,6 +11,7 @@
   text-align: center;
   margin-bottom: 40px;
   color: white;
+  font-size: 2rem;
 }
 
 .hobbies-track-container {
@@ -30,124 +31,153 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 180px;
-  margin: 0 15px;
-  padding: 20px 15px;
+  min-width: 200px;
+  margin: 0 20px;
+  padding: 25px 20px;
   background: rgba(255, 255, 255, 0.05);
   border: 2px solid white;
-  border-radius: 10px;
+  border-radius: 15px;
   backdrop-filter: blur(10px);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
   flex-shrink: 0;
 }
 
 .slide:hover {
   transform: scale(1.05);
   border-color: #2A7AE4;
+  background: rgba(42, 122, 228, 0.1);
 }
 
 .slide .icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin-bottom: 15px;
   filter: brightness(0) invert(1);
-  display: block; /* Asegura que la imagen se muestre */
+  display: block;
+  object-fit: contain;
 }
 
 .slide span {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
+  letter-spacing: 0.5px;
 }
 
+/* Animación suave de izquierda a derecha */
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
+/* Pausar animación al hacer hover */
 .slide-track:hover {
   animation-play-state: paused;
 }
 
-/* ===== SOFT SKILLS MEJORADOS ===== */
-.skills--soft {
-  color: white;
-  background: #00000061;
-  border: 2px solid white;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-}
-
-.skills--active {
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  background: rgba(42, 122, 228, 0.2);
-  border-radius: 5px;
-  border-left: 3px solid #2A7AE4;
-}
-
-/* ===== RESPONSIVE PARA MÓVIL ===== */
-@media screen and (max-width: 768px) {
+/* ===== RESPONSIVE PARA TABLET ===== */
+@media screen and (max-width: 1024px) {
   .hobbies {
-    padding: 32px 16px;
+    padding: 52px 60px;
   }
   
   .slide {
-    min-width: 140px;
-    margin: 0 10px;
-    padding: 15px 10px;
+    min-width: 180px;
+    padding: 20px 15px;
   }
   
   .slide .icon {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
   }
   
   .slide span {
-    font-size: 0.95rem;
-  }
-  
-  .skills--soft {
-    padding: 15px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  
-  .skills--active {
-    padding: 8px;
-    font-size: 0.85rem;
-  }
-  
-  @keyframes scroll {
-    100% { transform: translateX(-50%); }
+    font-size: 1.1rem;
   }
 }
 
+/* ===== RESPONSIVE PARA MÓVIL GRANDE ===== */
+@media screen and (max-width: 768px) {
+  .hobbies {
+    padding: 40px 30px;
+  }
+  
+  .hobbies__title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .slide {
+    min-width: 150px;
+    margin: 0 12px;
+    padding: 18px 12px;
+    border-width: 1.5px;
+  }
+  
+  .slide .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+  }
+  
+  .slide span {
+    font-size: 1rem;
+  }
+}
+
+/* ===== RESPONSIVE PARA MÓVIL PEQUEÑO ===== */
 @media screen and (max-width: 480px) {
+  .hobbies {
+    padding: 30px 16px;
+  }
+  
+  .hobbies__title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  
   .slide {
     min-width: 120px;
-    margin: 0 8px;
-    padding: 12px 8px;
+    margin: 0 10px;
+    padding: 15px 10px;
+    border-radius: 12px;
   }
   
   .slide .icon {
     width: 40px;
     height: 40px;
+    margin-bottom: 10px;
   }
   
   .slide span {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== RESPONSIVE PARA MÓVIL MUY PEQUEÑO ===== */
+@media screen and (max-width: 320px) {
+  .hobbies {
+    padding: 20px 10px;
   }
   
-  .skills--soft {
-    grid-template-columns: 1fr;
+  .slide {
+    min-width: 100px;
+    margin: 0 8px;
+    padding: 12px 8px;
+  }
+  
+  .slide .icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+  }
+  
+  .slide span {
+    font-size: 0.8rem;
   }
 }
