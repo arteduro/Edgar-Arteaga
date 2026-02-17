@@ -1,4 +1,4 @@
-/* ===== HOBBIES - VERSIÓN DEFINITIVA CON RESPALDO DE EMOJIS ===== */
+/* ===== HOBBIES - VERSIÓN SIMPLIFICADA CON EMOJIS ===== */
 .hobbies {
   padding: 64px 120px;
   background-color: #0b0c10;
@@ -27,36 +27,35 @@
 }
 
 .slide {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-width: 200px;
   margin: 0 20px;
   padding: 25px 20px;
-  background: rgba(255, 255, 255, 0.05) !important;
-  border: 2px solid white !important;
-  border-radius: 15px !important;
-  backdrop-filter: blur(10px) !important;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid white;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
   flex-shrink: 0;
 }
 
-.slide .icon {
-  width: 70px !important;
-  height: 70px !important;
-  margin-bottom: 15px !important;
-  filter: brightness(0) invert(1) !important;
-  display: block !important;
-  object-fit: contain !important;
-  background-color: transparent !important;
+/* Estilo para los emojis */
+.slide .emoji {
+  font-size: 70px;
+  display: block;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+  line-height: 1;
 }
 
-.slide span {
-  color: white !important;
-  font-size: 1.2rem !important;
-  font-weight: 500 !important;
-  text-align: center !important;
-  display: block !important;
+.slide span:last-child {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  display: block;
 }
 
 @keyframes scroll {
@@ -68,131 +67,92 @@
   animation-play-state: paused;
 }
 
-/* ===== VERSIÓN MÓVIL CON !important ABSOLUTO ===== */
+/* ===== VERSIÓN MÓVIL ===== */
 @media screen and (max-width: 768px) {
   .hobbies {
-    padding: 40px 20px !important;
+    padding: 40px 20px;
   }
 
   .hobbies__title {
-    font-size: 1.8rem !important;
-    margin-bottom: 30px !important;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
   }
 
   .slide {
-    min-width: 140px !important;
-    margin: 0 12px !important;
-    padding: 15px 12px !important;
-    display: flex !important;
+    min-width: 140px;
+    margin: 0 12px;
+    padding: 15px 12px;
   }
 
-  .slide .icon {
-    width: 50px !important;
-    height: 50px !important;
-    margin-bottom: 12px !important;
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  .slide .emoji {
+    font-size: 50px;
+    margin-bottom: 12px;
   }
 
-  .slide span {
-    font-size: 1rem !important;
-    display: block !important;
+  .slide span:last-child {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .hobbies {
-    padding: 30px 15px !important;
+    padding: 30px 15px;
   }
 
   .slide {
-    min-width: 120px !important;
-    margin: 0 10px !important;
-    padding: 12px 10px !important;
-    display: flex !important;
+    min-width: 120px;
+    margin: 0 10px;
+    padding: 12px 10px;
   }
 
-  .slide .icon {
-    width: 45px !important;
-    height: 45px !important;
-    margin-bottom: 10px !important;
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  .slide .emoji {
+    font-size: 45px;
+    margin-bottom: 10px;
   }
 
-  .slide span {
-    font-size: 0.9rem !important;
-    display: block !important;
+  .slide span:last-child {
+    font-size: 0.9rem;
   }
 }
 
-/* RESPALDO PARA MÓVILES MUY PEQUEÑOS */
 @media screen and (max-width: 360px) {
+  .hobbies {
+    padding: 25px 10px;
+  }
+
   .slide {
-    min-width: 100px !important;
-    margin: 0 8px !important;
-    padding: 10px 8px !important;
+    min-width: 100px;
+    margin: 0 8px;
+    padding: 10px 8px;
   }
 
-  .slide .icon {
-    width: 40px !important;
-    height: 40px !important;
-    margin-bottom: 8px !important;
+  .slide .emoji {
+    font-size: 40px;
+    margin-bottom: 8px;
   }
 
-  .slide span {
-    font-size: 0.8rem !important;
+  .slide span:last-child {
+    font-size: 0.8rem;
   }
 }
 
-/* RESPALDO EXTREMO PARA CUALQUIER DISPOSITIVO */
 @media screen and (max-width: 320px) {
   .hobbies {
-    padding: 20px 10px !important;
+    padding: 20px 8px;
   }
 
   .slide {
-    min-width: 90px !important;
-    margin: 0 6px !important;
-    padding: 8px 6px !important;
+    min-width: 90px;
+    margin: 0 6px;
+    padding: 8px 6px;
   }
 
-  .slide .icon {
-    width: 35px !important;
-    height: 35px !important;
-    margin-bottom: 6px !important;
+  .slide .emoji {
+    font-size: 35px;
+    margin-bottom: 6px;
   }
 
-  .slide span {
-    font-size: 0.7rem !important;
+  .slide span:last-child {
+    font-size: 0.75rem;
   }
-}
-
-/* Garantía de visibilidad para imágenes */
-img.icon {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  width: auto !important;
-  height: auto !important;
-  max-width: 100% !important;
-}
-
-/* Fondo de respaldo si la imagen no carga */
-.slide {
-  position: relative !important;
-}
-
-.slide::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  z-index: -1;
 }
