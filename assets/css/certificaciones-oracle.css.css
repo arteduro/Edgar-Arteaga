@@ -1,0 +1,35 @@
+/* ===== SECCION CERTIFICACIONES ORACLE ===== */
+
+.certificaciones-oracle {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Titulo centrado */
+.certificaciones-oracle__title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Contenedor SIN espacio */
+.certificaciones-oracle__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0; /* 🔥 ELIMINA separación */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.certificaciones-oracle__card {
+  background: linear-gradient(180deg, #2b0000, #000000);
+  border-radius: 0; /* opcional si quieres efecto totalmente pegado */
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.certificaciones-oracle__card:hover {
+  transform: scale(1.05);
+}

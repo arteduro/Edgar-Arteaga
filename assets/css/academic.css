@@ -103,4 +103,91 @@ academic__formation__text--unactive {
   .academic__formation__image{
     height: 6rem;
   }
+  .academic--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .academic__formation {
+    background: linear-gradient(145deg, #0d0d0d, #1a0000);
+    border: 2px solid #8b0000;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  .academic__formation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+  }
+  
+  .academic__formation__image {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  
+  .academic__formation__text--active {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .academic__formation__text--unactive {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .academic--container a {
+    text-decoration: none;
+  }
+/* ===== CERTIFICACIONES ORACLE ===== */
+
+.certifications {
+  margin-top: 80px;
+}
+
+.certifications__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.certifications__card {
+  background: linear-gradient(145deg, #0d0d0d, #1a0000);
+  border: 2px solid #8b0000;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.certifications__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(255, 0, 0, 0.5);
+}
+
+.certifications__image {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.certifications__title--card {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.certifications__subtitle {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.certifications__container a {
+  text-decoration: none;
+}
+   
 }
