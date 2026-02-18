@@ -326,44 +326,55 @@
         </div>
       </section>
 
-      <!-- ===== SECCIÓN HOBBIES SOLO CON EMOJIS ===== -->
+      <!-- ===== SECCIÓN HOBBIES - VERSIÓN ULTRA SIMPLE CON EMOJIS DIRECTOS ===== -->
       <section class="hobbies">
         <h2 class="bases__title2 hobbies__title">Hobbies</h2>
-        <div class="hobbies-track-container">
-          <div class="slide-track bases__text--normal">
-            <!-- Leer con emoji -->
-            <div class="slide">
-              <span style="font-size: 70px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1);">📚</span>
-              <span>Leer</span>
+        <div style="width: 100%; overflow: hidden;">
+          <div style="display: flex; animation: scroll 25s linear infinite; width: fit-content;">
+            
+            <!-- Leer -->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 150px; margin: 0 15px; padding: 20px; background: rgba(255,255,255,0.05); border: 2px solid white; border-radius: 15px; backdrop-filter: blur(10px);">
+              <span style="font-size: 70px; color: white; line-height: 1; display: block; margin-bottom: 10px;">📚</span>
+              <span style="color: white; font-size: 1.2rem; font-weight: 500; text-align: center;">Leer</span>
             </div>
             
-            <!-- Ir al Cine con emoji -->
-            <div class="slide">
-              <span style="font-size: 70px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1);">🎬</span>
-              <span>Ir al Cine</span>
+            <!-- Ir al Cine -->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 150px; margin: 0 15px; padding: 20px; background: rgba(255,255,255,0.05); border: 2px solid white; border-radius: 15px; backdrop-filter: blur(10px);">
+              <span style="font-size: 70px; color: white; line-height: 1; display: block; margin-bottom: 10px;">🎬</span>
+              <span style="color: white; font-size: 1.2rem; font-weight: 500; text-align: center;">Ir al Cine</span>
             </div>
             
-            <!-- Escuchar Música con emoji -->
-            <div class="slide">
-              <span style="font-size: 70px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1);">🎵</span>
-              <span>Escuchar Música</span>
+            <!-- Escuchar Música -->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 150px; margin: 0 15px; padding: 20px; background: rgba(255,255,255,0.05); border: 2px solid white; border-radius: 15px; backdrop-filter: blur(10px);">
+              <span style="font-size: 70px; color: white; line-height: 1; display: block; margin-bottom: 10px;">🎵</span>
+              <span style="color: white; font-size: 1.2rem; font-weight: 500; text-align: center;">Escuchar Música</span>
             </div>
 
             <!-- Duplicados para efecto infinito -->
-            <div class="slide">
-              <span style="font-size: 70px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1);">📚</span>
-              <span>Leer</span>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 150px; margin: 0 15px; padding: 20px; background: rgba(255,255,255,0.05); border: 2px solid white; border-radius: 15px; backdrop-filter: blur(10px);">
+              <span style="font-size: 70px; color: white; line-height: 1; display: block; margin-bottom: 10px;">📚</span>
+              <span style="color: white; font-size: 1.2rem; font-weight: 500; text-align: center;">Leer</span>
             </div>
-            <div class="slide">
-              <span style="font-size: 70px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1);">🎬</span>
-              <span>Ir al Cine</span>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 150px; margin: 0 15px; padding: 20px; background: rgba(255,255,255,0.05); border: 2px solid white; border-radius: 15px; backdrop-filter: blur(10px);">
+              <span style="font-size: 70px; color: white; line-height: 1; display: block; margin-bottom: 10px;">🎬</span>
+              <span style="color: white; font-size: 1.2rem; font-weight: 500; text-align: center;">Ir al Cine</span>
             </div>
-            <div class="slide">
-              <span style="font-size: 70px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1);">🎵</span>
-              <span>Escuchar Música</span>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 150px; margin: 0 15px; padding: 20px; background: rgba(255,255,255,0.05); border: 2px solid white; border-radius: 15px; backdrop-filter: blur(10px);">
+              <span style="font-size: 70px; color: white; line-height: 1; display: block; margin-bottom: 10px;">🎵</span>
+              <span style="color: white; font-size: 1.2rem; font-weight: 500; text-align: center;">Escuchar Música</span>
             </div>
           </div>
         </div>
+        
+        <style>
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .hobbies-track:hover {
+            animation-play-state: paused;
+          }
+        </style>
       </section>
 
       <section id="formationSection" class="academic">
